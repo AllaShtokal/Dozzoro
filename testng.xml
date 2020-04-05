@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.qa.ExtentReportListener.ExtentReportNG" />
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/testoveShtokal">
+        <classes>
+            <class name="MainPageTests">
+                <methods>
+                    <include name="mainPageTitleTest"/>
+                    <include name="imgLogoTest"/>
+                    <include name="saleOutMenuBtnTest"/>
+                </methods>
+            </class>
+            <class name="ProductPageTests">
+                <methods>
+                    <include name="newPriceVisibilityTest"/>
+                </methods>
+            </class>
+            <class name="SaleOutPageTests">
+                <methods>
+                    <include name="saleOutPageTitleTest"/>
+                    <include name="clickOnProductCardTest"/>
+                    <include name="TestTask1"/>
+                    <include name="TestTask2"/>
+                    <include name="TestTask3"/>
+                    <include name="TestTask4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
